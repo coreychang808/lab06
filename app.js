@@ -6,15 +6,19 @@ var pike = {
   minCust: 23,
   maxCust: 65,
   avgCookieSale: 6.3,
+  sumCookies: 0,
   render: function() {
     var cookie = document.getElementById('pikeCookieList');
     for (let i=0; i<time.length; i++) {
       var newItem = document.createElement('li');
       var cookieHours = this.cookiesPerHour();
       newItem.textContent = `${time[i]} : ${cookieHours} cookies`;
-
       cookie.appendChild(newItem);
+      this.sumCookies += cookieHours;
     }
+    var total = document.createElement('li');
+    total.textContent = ` ${this.sumCookies} cookies total`;
+    cookie.appendChild (total);
   },
 
   generateRandom:function(){
@@ -34,15 +38,19 @@ var seaTac = {
   minCust: 3,
   maxCust: 24,
   avgCookieSale: 1.2,
+  sumCookies: 0,
   render: function() {
     var cookie = document.getElementById('seaTacCookieList');
     for (let i=0; i<time.length; i++) {
       var newItem = document.createElement('li');
       var cookieHours = this.cookiesPerHour();
       newItem.textContent = `${time[i]} : ${cookieHours} cookies`;
-
       cookie.appendChild(newItem);
+      this.sumCookies += cookieHours;
     }
+    var total = document.createElement('li');
+    total.textContent = ` ${this.sumCookies} cookies total`;
+    cookie.appendChild (total);
   },
 
   generateRandom:function(){
@@ -61,15 +69,19 @@ var seaCenter = {
   minCust: 11,
   maxCust: 38,
   avgCookieSale: 3.7,
+  sumCookies: 0,
   render: function() {
     var cookie = document.getElementById('seaCenter');
     for (let i=0; i<time.length; i++) {
       var newItem = document.createElement('li');
       var cookieHours = this.cookiesPerHour();
       newItem.textContent = `${time[i]} : ${cookieHours} cookies`;
-
       cookie.appendChild(newItem);
+      this.sumCookies += cookieHours;
     }
+    var total = document.createElement('li');
+    total.textContent = ` ${this.sumCookies} cookies total`;
+    cookie.appendChild (total);
   },
 
   generateRandom:function(){
@@ -88,15 +100,19 @@ var capitolHill = {
   minCust: 20,
   maxCust: 38,
   avgCookieSale: 2.3,
+  sumCookies: 0,
   render: function() {
     var cookie = document.getElementById('capitolHill');
     for (let i=0; i<time.length; i++) {
       var newItem = document.createElement('li');
       var cookieHours = this.cookiesPerHour();
       newItem.textContent = `${time[i]} : ${cookieHours} cookies`;
-
       cookie.appendChild(newItem);
+      this.sumCookies += cookieHours;
     }
+    var total = document.createElement('li');
+    total.textContent = ` ${this.sumCookies} cookies total`;
+    cookie.appendChild (total);
   },
 
   generateRandom:function(){
@@ -115,15 +131,19 @@ var alki = {
   minCust: 2,
   maxCust: 16,
   avgCookieSale: 4.6,
+  sumCookies: 0,
   render: function() {
     var cookie = document.getElementById('alki');
     for (let i=0; i<time.length; i++) {
       var newItem = document.createElement('li');
       var cookieHours = this.cookiesPerHour();
       newItem.textContent = `${time[i]} : ${cookieHours} cookies`;
-
       cookie.appendChild(newItem);
+      this.sumCookies += cookieHours;
     }
+    var total = document.createElement('li');
+    total.textContent = ` ${this.sumCookies} cookies total`;
+    cookie.appendChild (total);
   },
 
   generateRandom:function(){
