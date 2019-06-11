@@ -1,3 +1,14 @@
 header{
     text-align: center;
 }
+
+.backgroundPic{
+    background: rgb(0, 11, 48);
+    background-image: url(../img/underwater.jpg);
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
