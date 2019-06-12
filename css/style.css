@@ -12,3 +12,9 @@ header{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+ul{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 3em;
+}
