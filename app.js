@@ -108,3 +108,10 @@ function tFoot(){
   tableFooter.appendChild(tableRow);
 }
 tFoot();
+
+//formssssss
+
+// function addNewLocation(){
+//   var theForm = event.target;
+//   var 
+// };
