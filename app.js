@@ -116,9 +116,9 @@ form.addEventListener('submit', addNewStore);
 
 function addNewStore (event) {
   event.preventDefault();
-  console.log(event.target);
+  // console.log(event.target);
   var newName = event.target.nameOfStore.value;
-  console.log(newName);
+  // console.log(newName);
   var newMin = event.target.minCustomer.value;
   var newMax = event.target.maxCustomers.value;
   var newAvg = event.target.avgCustomers.value;
