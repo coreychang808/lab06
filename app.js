@@ -56,7 +56,7 @@ SalmonCookieStore.render = function(){
 SalmonCookieStore.prototype.render = function(){
   var tableBody = document.getElementById('familyBody');
   var tableRow = document.createElement('tr');
-  var cell =document.createElement('td');
+  var cell = document.createElement('td');
   cell.textContent = this.name;
   tableRow.appendChild(cell);
   for(var i = 0; i< this.sumCookiesArray.length; i++){
@@ -75,7 +75,6 @@ new SalmonCookieStore('Capitol Hill', '20', '38', '2.3');
 new SalmonCookieStore('Alki', '2', '16', '4.6');
 
 
-SalmonCookieStore.render();
 
 for (var i=0; i < SalmonCookieStore.list.length; i++){
   SalmonCookieStore.list[i].render();
@@ -107,14 +106,27 @@ function tFoot(){
   tableRow.appendChild(cell);
   tableFooter.appendChild(tableRow);
 }
+SalmonCookieStore.render();
 tFoot();
 
 //formssssss
 
-// function addNewLocation(){
-//   var theForm = event.target;
-//   var 
-// };
+var form = document.getElementById('theForm');
+form.addEventListener('submit', addNewStore);
+
+function addNewStore (event) {
+  event.preventDefault();
+  // console.log(event.target);
+  var newName = event.target.nameOfStore.value;
+  // console.log(newName);
+  var newMin = event.target.minCustomer.value;
+  var newMax = event.target.maxCustomers.value;
+  var newAvg = event.target.avgCustomers.value;
+
+  new SalmonCookieStore(newName, newMin, newMax, newAvg);
+  SalmonCookieStore.list[SalmonCookieStore.list.length-1].render();
+  tFoot();
+}
 
 
-// gkjslglgsalgj
+
