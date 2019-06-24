@@ -4,9 +4,11 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <header></header>
-<<<<<<< HEAD
+<body class = "salesBody">
+    <header>
+        <h1>Welcome to my Sale page!</h1>
+        <p id = "indeLink"><a href = "index.html">Back</a></p>
+    </header>
     <main> 
       <div class = "wholeTable">  
         <table>
@@ -16,47 +18,25 @@
         </table>
           <form id ="theForm">
             <fieldset>
-              <legend>Input data</legend>
-              <label for = "nameOfStore">Enter store name:</label>
+              <legend>Input data:</legend>
+              <label>Enter store name:</label>
               <input id = "nameOfStore" type= "text" name = "nameOfStore" required>
-              <label for = "minCustomer">Min Customers</label>
+              <label>Min Customers:</label>
               <input id = "minCustomer" type= "text" name = "minCustomer" required>
-              <label for = "maxCustomers">Max Customers</label>
+              <label>Max Customers:</label>
               <input id = "maxCustomers" type= "text" name = "maxCustomers" required>
-              <label for = "avgCustomers">Avg Customers</label>
+              <label>Avg Customers:</label>
               <input id = "avgCustomers" type= "text" name = "avgCustomers" required>
               <input id = "submitButton" type= "submit" >
             </fieldset>
           </form>
+          <img id= "salmonSales" src = "img/salmon.png">
       </div>
-=======
-    <main>   
-    <table>
-      <thead id =  "tableHead"></thead>
-        <tbody id = "familyBody"></tbody>
-        <tfoot id = "tableFoot"></tfoot>
-      </table>
-      <form id ="theForm">
-        <fieldset>
-          <legend>Input data</legend>
-          <label for = "nameOfStore">Enter store name:</label>
-          <input id = "nameOfStore" type= "text" name = "task" required>
-          <label for = "minCustomer">Min Customers</label>
-          <input id = "minCustomer" type= "number" name = "task" required>
-          <label for = "maxCustomers">Max Customers</label>
-          <input id = "maxCustomers" type= "number" name = "task" required>
-          <label for = "avgCustomers">Avg Customers</label>
-          <input id = "avgCustomers" type= "number" name = "task" required>
-          <button id = "submitButton" >Submit</button>
-        </fieldset>
-      </form>
->>>>>>> 9e15f18c2a77bb7fdb14d02b612d550a5bc4b0e6
     </main>
     <footer>
         <p id="copyright">&copy;CookiesByCorey</p>
     </footer>
 </body>
-
 <script src="./app.js"></script>
 
 </html>
