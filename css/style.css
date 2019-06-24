@@ -1,20 +1,73 @@
-header{
+
+ html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.backgroundPic {
+   min-height:100%;
+   position:relative;
+}
+header {
+   background:rgb(87, 87, 87);
+   padding:10px;
+   width: 100%;
+}
+body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+   position: relative;
+}
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+   text-align: center;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 20;
+    margin: auto;
+    padding: 30px;
     text-align: center;
 }
 
-.backgroundPic{
-    background: rgb(0, 11, 48);
-    background-image: url(../img/underwater.jpg);
-    height:100%;
-    width:100%;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+.allPics {
+    display: flex;
+    overflow-x: scroll;
+    height: 350px;
+    margin-bottom: 50px;
+
 }
 
-ul{
-    font-family: Verdana;
-    font-weight: bold;
-    font-size: 3em;
+.pics {
+    width:300px;
+    height:300px;
+    border: 5px solid black;
+}
+
+figcaption {
+    text-align: center;
+    background-color: black;
+    color:salmon;
+    height: 18px;
+    padding-top: 4px;
+    
+}
+
+#salesLink{
+    width: 90px;
+    height: 50px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: white;
 }
